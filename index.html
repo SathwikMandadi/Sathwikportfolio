@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sathwik Reddy Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body >
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Full Stack Developer</p>
+            <h1>Hi, I'm <span>Sathwik Reddy Mandadi</span><br></h1>
+            <p > A dedicated Software Engineer with over 8 years of Experience in  Java Full-Stack Development and an AWS Certified Solutions Architect. </p>
+        
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sathwik.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am an AWS Certified Solutions Architect and Highly Skilled Full Stack Java Developer with over 8 years of Professional Experience in creating impactful and innovative solutions. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.
+                </p> 
+                <br>
+                <p> My passion lies in building innovative and scalable applications, leveraging modern technologies like Java, Node.js, React, Angular, and AWS services such as Lambda, S3, DynamoDB, and more. </p>
+                <br>
+                <p>My professional journey spans collaborating with cross-functional teams, adhering to Agile methodologies, and solving complex technical challenges across diverse industries. Whether it’s building microservices, optimizing system performance, or designing responsive web interfaces, I am committed to delivering quality solutions that align with business goals.</p>
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End Technologies</span><br>ReactJS, Angular, JavaScript, HTML5, CSS3, TypeScript, Redux, Bootstrap, Material UI, LESS, NodeJS</li>
+                        <li><span>Back End Technologies</span><br>  Java 8/11/17, Spring Boot, RESTful APIs, Microservices, Event-Driven Architecture, Apache Kafka</li>
+                        <li><span>DevOps & CI/CD Tools</span><br>Jenkins, Docker, Kubernetes, AWS CodePipeline, AWS CodeBuild, AWS CodeDeploy</li>
+                        <li><span>Database Management & Version Control</span><br>SQL (MySQL, PostgreSQL), NoSQL (MongoDB, DynamoDB), JPA/Hibernate, Git, GitHub, Bitbucket</li>
+                        <li><span>Testing & Automation</span><br>JUnit, Mockito, Karma, Jasmine, SonarQube, Postman, Swagger</li>
+                        <li><span>APIs & Web Services</span><br>RESTful APIs, GraphQL, Spring REST</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> Mar 2023 - Present</span><br>Sr. Full Stack Java Developer at Mutual of Omaha</li>
+                        <li><span>Apr 2021- Mar 2023</span><br>Full Stack Java Developer at Carlson Wagonlit Travel</li>
+                        <li><span>Dec 2019 - Apr 2021</span><br>Full Stack Java Developer at Ikea </li>
+                        <li><span>Feb 2018 – Dec 2019</span><br>Full stack Java Developer at Medstar Health</li>
+                        <li><span>Apr 2016 – Feb 2018</span><br>Software Developer-Intern at Conquerors Software Technologies Pvt. Ltd</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br> M.S in Information Systems Technology from Wilmington University, Delaware.</li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Certifications">
+                    <ul>
+                        <li><span></span><br>AWS Certified Solutions Architect</li>
+                        <li><span></span><br>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------contact------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sathwikmfs08@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +1 8063635519</p>
+                <div class="social-icons">
+                    
+                    <a href="http://linkedin.com/in/sathwik-reddy-m-89396a332" target="_blank"><i class="fab fa-linkedin"><img src="./images/linkedin.png"></i></a>
+                </div>
+               
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="12a05427-0092-4c96-94ba-f8fc6956b8bb">
+                    <input type="text" name="Name" placeholder= "Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy 2024 Sathwik Mandadi. All rights reserved.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
